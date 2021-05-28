@@ -1,0 +1,8 @@
+C:\Users\Chris\Desktop\sem 4\software design patterns\Project 1\INFO3137-Project1 - Starting Point\Director\obj\Debug\Director.csprojAssemblyReference.cache
+C:\Users\Chris\Desktop\sem 4\software design patterns\Project 1\INFO3137-Project1 - Starting Point\Director\obj\Debug\Director.csproj.CoreCompileInputs.cache
+C:\Users\Chris\Desktop\sem 4\software design patterns\Project 1\INFO3137-Project1 - Starting Point\docs\Director.exe.config
+C:\Users\Chris\Desktop\sem 4\software design patterns\Project 1\INFO3137-Project1 - Starting Point\docs\Director.exe
+C:\Users\Chris\Desktop\sem 4\software design patterns\Project 1\INFO3137-Project1 - Starting Point\docs\Director.pdb
+C:\Users\Chris\Desktop\sem 4\software design patterns\Project 1\INFO3137-Project1 - Starting Point\Director\obj\Debug\Director.csproj.CopyComplete
+C:\Users\Chris\Desktop\sem 4\software design patterns\Project 1\INFO3137-Project1 - Starting Point\Director\obj\Debug\Director.exe
+C:\Users\Chris\Desktop\sem 4\software design patterns\Project 1\INFO3137-Project1 - Starting Point\Director\obj\Debug\Director.pdb

@@ -1,0 +1,23 @@
+On in-class assignments, projects, and exams in this course, a small portion of your mark will be allocated to commenting. 
+In this course, here's what you need to do to get full marks on comments:
+
+1. For any non-constructor and non-getter/setter method, you'll need to include a comment that looks like this:
+
+/*Method Name:
+*Purpose:
+*Accepts:
+*Returns:
+*/
+
+
+Additionally, you'll need to fill out the name of the method, its purpose, and what it accepts and returns. 
+
+2. For any class, include at the top of the file a comment that looks like this:
+/**
+	 * Class Name:		
+	 * Purpose:			
+	 * Coder:			
+	 * Date:			
+*/
+
+3. Note that you don't need comments for constructors, getters, or setters.
