@@ -20,44 +20,51 @@ namespace Testing
             string[] split = test.Split(";");
 
             List<string> Head = new List<string>();
-            List<string> Rows = new List<string>();
+            List<List<string>> Rows = new List<List<string>>();
+
 
             foreach (string s in split)
             {
-                string[] splitAgain = s.Split("$");
-                if (splitAgain[0] == "Head")
+                string[] section = s.Split('$');
+
+                if (section[0] == "Head")
                 {
-                    foreach (string parsed in splitAgain)
+                    for (int index = 0; index < section.Length; index++)
                     {
-                        if (parsed != "Head")
-                        {
-                            Head.Add(parsed);
-                        }
+                        Head.Add(section[index]);
                     }
                 }
-                else // its the rows
+                else
                 {
-
-                    foreach (string parsed in splitAgain)
+                    List<string> Row = new List<string>();
+                    for (int index = 0; index < section.Length; index++)
                     {
-                        Rows.Add(parsed);
+                        Row.Add(section[index]);
                     }
+                    Rows.Add(Row);
                 }
             }
 
+            IElement table = new HtmlTable(test);
 
             IElement header = new HtmlHeader(1, "The Header");
             IElement image = new HtmlImage("img/csharp.png", "Alt Text", "Title Text");
-            string[] data = {"item 1", "item 2", "item 3"};
+            string[] data = { "item 1", "item 2", "item 3" };
             IElement list = new HtmlList("Unordered", data);
             Console.WriteLine(header.ToString());
             Console.WriteLine(image.ToString());
             Console.WriteLine(list.ToString());
+            Console.WriteLine(table.ToString());
 
 
 
 
             int x = 0;
-       }
+        }
+
+
     }
+
+
 }
+

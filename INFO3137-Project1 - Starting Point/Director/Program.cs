@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using DocumentFactory.Factories;
+using System.IO;
 using System.Text.RegularExpressions;
 
 
@@ -16,12 +17,15 @@ namespace Director
             foreach (var command in commands)
             {
                 var strippedCommand = Regex.Replace(command, @"\t|\n|\r", "");
-                var commandList = strippedCommand.Split(':');
+            var commandList = strippedCommand.Split(':');
                 switch (commandList[0])
                 {
                     case "Document":
                         // Your document creation code goes here
-
+                        if(commandList[1] == "Html")
+                        {
+                            CreateDocument(new HtmlFactory());
+                        }
                         break;
                     case "Element":
                         // Your element creation code goes here
@@ -33,6 +37,11 @@ namespace Director
                         break;
                 }
             }
+        }
+
+        static void CreateDocument(IDocumentFactory factory)
+        {
+            var document = factory.CreateDocument("whatever.html");
         }
     }
 }

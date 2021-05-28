@@ -1,7 +1,7 @@
-﻿namespace DocumentFactory
+﻿
+namespace DocumentFactory
 {
     public interface IElement
-    {
-
+    {]
     }
 }

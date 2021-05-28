@@ -9,11 +9,13 @@ namespace DocumentFactory.Elements
     public class HtmlTable : IElement
     {
         public List<string> Head { get; set; }
-        public List<string> Rows { get; set; }
-       
+        public List<List<string>> Rows { get; set; }
+
 
         public HtmlTable(string tableData)
         {
+            Head = new List<string>();
+            Rows = new List<List<string>>();
             Parse(tableData);
         }
 
@@ -24,22 +26,62 @@ namespace DocumentFactory.Elements
             foreach(string data in split)
             {
                 string[] section = data.Split('$');
-                if(section[0] == "Head")
+
+                if (section[0] == "Head")
                 {
-                    foreach(string parsed in section)
+                    for (int index = 0; index < section.Length; index++)
                     {
-                        this.Head.Add(parsed);
+                        Head.Add(section[index]);
                     }
                 }
-                else // else its a row
+                else if (section[0] == "Row")
                 {
-                    foreach(string parsed in section)
+                    List<string> Row = new List<string>();
+                    for (int index = 0; index < section.Length; index++)
                     {
-                        this.Rows.Add(parsed);
+                        Row.Add(section[index]);
                     }
+                    Rows.Add(Row);
+                }
+                else
+                {
+                    continue;
                 }
             }
         }
 
+
+        public override string ToString()
+        {
+            string returnString = $"<table>";
+
+            // add header
+            returnString += $"<thead><tr>";
+            foreach(string s in Head)
+            {
+                if(s != "Head")
+                {
+                    returnString += $"<th>{s}</th>";
+                }
+            }
+            returnString += $"</tr></thead>";
+           
+            // add table rows
+            foreach(List<string> row in Rows)
+            {
+                returnString += $"<tr>";
+                foreach(string s in row)
+                {
+                    if(s != "Row")
+                    {
+                        returnString += $"<td>{s}</td>";
+                    }
+                }
+                returnString += $"</tr>";
+            }
+
+            return returnString += $"</table>";
+
+        }
     }
 }
