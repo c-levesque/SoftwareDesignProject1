@@ -51,6 +51,8 @@
     <Compile Include="Elements\MarkdownHeader.cs" />
     <Compile Include="Elements\MarkdownImage.cs" />
     <Compile Include="Elements\MarkdownTable.cs" />
+    <Compile Include="Factories\HtmlFactory.cs" />
+    <Compile Include="Factories\MarkdownFactory.cs" />
     <Compile Include="IDocument.cs" />
     <Compile Include="Factories\IDocumentFactory.cs" />
     <Compile Include="IElement.cs" />

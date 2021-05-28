@@ -11,7 +11,7 @@ namespace Testing
         static void Main(string[] args)
         {
             IDocument myItem = MarkdownDocument.GetInstance();
-            IDocument myItem2 = HtmlDocument.GetInstance();
+            IDocument myItem2 = HtmlDocument.GetInstance("index.html");
 
             Console.WriteLine(myItem.ToString());
             Console.WriteLine(myItem2.ToString());

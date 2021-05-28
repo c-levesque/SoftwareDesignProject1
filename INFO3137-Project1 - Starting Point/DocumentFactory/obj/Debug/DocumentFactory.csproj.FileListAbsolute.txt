@@ -4,9 +4,3 @@ C:\Users\Chris\Desktop\sem 4\software design patterns\Project 1\INFO3137-Project
 C:\Users\Chris\Desktop\sem 4\software design patterns\Project 1\INFO3137-Project1 - Starting Point\DocumentFactory\bin\Debug\DocumentFactory.pdb
 C:\Users\Chris\Desktop\sem 4\software design patterns\Project 1\INFO3137-Project1 - Starting Point\DocumentFactory\obj\Debug\DocumentFactory.dll
 C:\Users\Chris\Desktop\sem 4\software design patterns\Project 1\INFO3137-Project1 - Starting Point\DocumentFactory\obj\Debug\DocumentFactory.pdb
-C:\Users\Chris\Desktop\semester 4\projects\SoftwareDesignProject1\INFO3137-Project1 - Starting Point\DocumentFactory\bin\Debug\DocumentFactory.dll
-C:\Users\Chris\Desktop\semester 4\projects\SoftwareDesignProject1\INFO3137-Project1 - Starting Point\DocumentFactory\bin\Debug\DocumentFactory.pdb
-C:\Users\Chris\Desktop\semester 4\projects\SoftwareDesignProject1\INFO3137-Project1 - Starting Point\DocumentFactory\obj\Debug\DocumentFactory.csprojAssemblyReference.cache
-C:\Users\Chris\Desktop\semester 4\projects\SoftwareDesignProject1\INFO3137-Project1 - Starting Point\DocumentFactory\obj\Debug\DocumentFactory.csproj.CoreCompileInputs.cache
-C:\Users\Chris\Desktop\semester 4\projects\SoftwareDesignProject1\INFO3137-Project1 - Starting Point\DocumentFactory\obj\Debug\DocumentFactory.dll
-C:\Users\Chris\Desktop\semester 4\projects\SoftwareDesignProject1\INFO3137-Project1 - Starting Point\DocumentFactory\obj\Debug\DocumentFactory.pdb
